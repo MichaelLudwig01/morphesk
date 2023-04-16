@@ -1,5 +1,5 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
-  <section class="top-nav">
+  <section class="top-nav" [class.shrink]="isShrink">
     <div>
       TrioMorphesk
     </div>
@@ -7,11 +7,12 @@
     <label class='menu-button-container' for="menu-toggle">
     <div class='menu-button'></div>
   </label>
-    <ul class="menu">
-      <li>One</li>
-      <li>Two</li>
-      <li>Three</li>
-      <li>Four</li>
-      <li style="border-bottom: 1px solid black;">Five</li>
+    <ul class="menu" [class.shrink]="isShrink">
+      <li routerLink="">Home</li>
+      <li routerLink="calender">Kalender</li>
+      <li routerLink="vita">Vita</li>
+      <li routerLink="gallery">Gallery</li>
+      <li routerLink="contact">Contact</li>
+      <li routerLink="impressum" id="last">Impressum</li>
     </ul>
   </section>

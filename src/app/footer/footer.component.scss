@@ -1,0 +1,29 @@
+.footer {
+    border-top-style: solid;
+    border-top-width: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+
+    padding: 5% 30% 5% 30%;
+
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 80px;
+    }
+}
+
+@media (max-width: 700px) {
+    .footer {
+        padding: 5% 20% 5% 20%;
+
+        .content {
+            gap:40px;
+            flex-wrap: wrap;
+        }
+    }
+}
