@@ -13,6 +13,8 @@ import { ImpressumComponent } from './impressum/impressum.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { CalenderComponent } from './calender/calender.component';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { AdminComponent } from './admin/admin.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -24,13 +26,15 @@ import { MatGridListModule } from '@angular/material/grid-list';
     ContactComponent,
     ImpressumComponent,
     GalleryComponent,
-    CalenderComponent
+    CalenderComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatGridListModule
+    MatGridListModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

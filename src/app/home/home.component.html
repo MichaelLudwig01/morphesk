@@ -1,18 +1,23 @@
 <div class="header">
     <div class="cover">
-
     </div>
 </div>
 <div class="main">
     <div class="introText">
-        <span>
+        <h1 *ngIf="!auth">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
             labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores 
             et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt 
             t labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo 
             dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-        </span>
+        </h1>
+        <div class="edit" *ngIf="auth">
+            <form>
+                <textarea id="text">{{text}}</textarea>
+                <button type="button">submit</button>
+            </form>
+        </div>
     </div>
     <div class="video">
         <video id="sampleMovie" src="./assets/sample-5s.mp4" controls></video>
