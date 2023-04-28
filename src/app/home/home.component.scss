@@ -5,6 +5,18 @@
         height: 70vh;
         background-size: cover;
         background-position: bottom;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            color: white;
+            font-size: 6rem;
+            line-height: 100px;
+            margin: 0;
+            width: 50%;
+            text-shadow: -4px 4px 3px orange;
+        }
     }
 }
 
@@ -72,6 +84,10 @@
     .header {
         .cover {
             height: 70vh;
+            h1 {
+                font-size: 4rem;
+                line-height: 70px;
+            }
         }
     }
     .main {
@@ -99,6 +115,11 @@
     .header {
         .cover {
             height: 70vh;
+
+            h1 {
+                font-size: 3rem;
+                line-height: 50px;
+            }
         }
     }
     .main {
@@ -127,6 +148,11 @@
     .header {
         .cover {
             height: 60vh;
+            h1 {
+                font-size: 2.5rem;
+                line-height: 40px;
+                width: 70%;
+            }
         }
     }
     .main {
@@ -134,7 +160,10 @@
             width: auto;
             height:auto;
             padding: 25px;
-            font-size: 1.4rem;
+            h1 {
+                font-size: 1.1rem;
+                line-height: 20px;
+            }
         }
         .video {
             width: auto;
