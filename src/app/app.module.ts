@@ -15,6 +15,7 @@ import { CalenderComponent } from './calender/calender.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { AdminComponent } from './admin/admin.component';
 import { MatIconModule } from '@angular/material/icon';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { MatIconModule } from '@angular/material/icon';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatGridListModule,
-    MatIconModule
+    MatIconModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

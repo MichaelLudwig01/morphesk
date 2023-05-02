@@ -1,1 +1,14 @@
-<p>admin works!</p>
+<div class="center">
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <p>Password</p>
+
+    <label for="first-name">First Name: </label>
+    <input id="first-name" type="text" formControlName="firstName">
+  
+    <label for="last-name">Password (1234)</label>
+    <input id="last-name" type="text" formControlName="password">
+
+    <div style="display: flex; gap:5px; justify-content: space-between;"><button type="submit">Submit</button><p>{{message}}</p></div>
+  
+  </form>
+</div>
