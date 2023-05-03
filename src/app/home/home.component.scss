@@ -8,15 +8,18 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
 
         h1 {
+            text-align: center;
             color: white;
             font-size: 6rem;
             line-height: 100px;
             margin: 0;
-            width: 50%;
             text-shadow: -4px 4px 3px orange;
-            font-family: 'Parisienne';
+            font-family: 'Bonodi';
+            letter-spacing: .3em;
+            font-variant: small-caps;
         }
     }
 }
@@ -27,6 +30,8 @@
         height:auto;
         padding: 50px 400px 50px 400px;
         font-size: 2rem;
+        font-family: 'Avenir Next';
+        font-variant: small-caps;
 
         .edit {
             width: 100%;
@@ -150,7 +155,7 @@
         .cover {
             height: 60vh;
             h1 {
-                font-size: 2.5rem;
+                font-size: 2rem;
                 line-height: 40px;
                 width: 70%;
             }
