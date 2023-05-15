@@ -6,17 +6,12 @@
 <div class="main">
     <div class="introText">
         <h1 *ngIf="!auth">
-            lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
-            labore et dolore magna aliquyam erat, sed diam voluptua. at vero eos et accusam et justo duo dolores 
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt 
-            t labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo 
-            dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            {{text}}
         </h1>
         <div class="edit" *ngIf="auth">
-            <form>
-                <textarea id="text">{{text}}</textarea>
-                <button type="button">submit</button>
+            <form [formGroup]="homeText" (ngSubmit)="updateText()">
+                <textarea id="text" formControlName="content">{{text}}</textarea>
+                <button type="submit">submit</button>
             </form>
         </div>
     </div>
