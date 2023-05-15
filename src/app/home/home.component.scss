@@ -1,8 +1,9 @@
 .header {
     .cover {
+        padding-top:100px;
         background-image: url("../../assets/cover.jpg");
         width:100%;
-        height: 70vh;
+        height: 30vw;
         background-size: cover;
         background-position: bottom;
         display: flex;
@@ -16,9 +17,12 @@
             font-size: 6rem;
             line-height: 100px;
             margin: 0;
-            text-shadow: -4px 4px 3px orange;
             font-family: 'Bonodi';
             letter-spacing: .3em;
+            text-shadow:  1px  1px 1px black,
+                  1px -1px 1px black,
+                 -1px  1px 1px black,
+                 -1px -1px 1px black;
         }
     }
 }
@@ -87,7 +91,6 @@
 @media (max-width: 1600px) {
     .header {
         .cover {
-            height: 70vh;
             h1 {
                 font-size: 4rem;
                 line-height: 70px;
@@ -118,8 +121,6 @@
 @media (max-width: 1200px) {
     .header {
         .cover {
-            height: 70vh;
-
             h1 {
                 font-size: 3rem;
                 line-height: 50px;
@@ -151,7 +152,6 @@
 @media (max-width: 700px) {
     .header {
         .cover {
-            height: 60vh;
             h1 {
                 font-size: 2.3rem;
                 line-height: 40px;
@@ -177,6 +177,43 @@
             display: flex;
             justify-content: center;
             padding: 25px;
+    
+            video {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .header {
+        .cover {
+            h1 {
+                font-size: 2.1rem;
+                line-height: 40px;
+                margin:0px;
+                width:auto;
+            }
+        }
+    }
+    .main {
+        .introText {
+            width: auto;
+            height:auto;
+            padding: 25px;
+            h1 {
+                font-size: 1.1rem;
+                line-height: 5px;
+                line-height: 20px;
+                font-weight: lighter;
+            }
+        }
+        .video {
+            width: auto;
+            display: flex;
+            justify-content: center;
+            padding: 0 25px 25px 25px;
     
             video {
                 width: 100%;
