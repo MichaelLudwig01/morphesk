@@ -8,6 +8,7 @@ import { Component, HostListener } from '@angular/core';
 export class MenuComponent {
   isShrink: boolean = false;
   shrinkOffset: number = 100; // define the scroll offset to trigger the shrink effect
+  mode: string = 'side';
 
   ngOnInit() {
     this.onWindowScroll();

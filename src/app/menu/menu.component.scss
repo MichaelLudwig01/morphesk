@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway);
+/*@import url(https://fonts.googleapis.com/css?family=Raleway);
 h2 {
   vertical-align: center;
   text-align: center;
@@ -24,7 +24,6 @@ body {
   align-items: center;
   justify-content: space-between;
   background-color: white;
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: black;
   height: 100px;
   padding: 1em;
@@ -32,14 +31,15 @@ body {
   position: fixed;
   width: 100%;
 
+  z-index: 3;
+
   transition: all 0.3s ease-in-out;
   border-bottom: 1px solid orange;
 
 }
 
 .top-nav.shrink {
-  height: 50px; /* your shrunk navigation bar height */
-  /* your additional shrunk navigation bar styles go here */
+  height: 50px;
 }
 
 .menu {
@@ -48,6 +48,7 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  align-items: center;
   
 }
 
@@ -140,7 +141,6 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: white;
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: black;
     height: 80px;
     padding: 1em;
@@ -226,4 +226,19 @@ body {
 
 
 }
+*/
 
+
+.example-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+mat-drawer-content {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

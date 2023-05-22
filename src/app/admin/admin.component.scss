@@ -1,13 +1,13 @@
 .center {
-    width: auto;
-        height: 100vh;
+    width: 100vw;
+        height: calc(100vh - 56px);
         display: flex;
         justify-content: center;
         align-items: center;
+
     form {
         padding: 20px;
         border-radius: 20px;
-        border: 1px orange solid;
         display: flex;
         gap: 20px;
         flex-direction: column;

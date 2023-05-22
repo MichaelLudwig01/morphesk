@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit{
   updateText(){
 
     console.log(this.homeText.value)
-    this.http.post("http://localhost:8000/updateText", this.homeText.value).subscribe(res => {
+    this.http.post("http://ludwig-michael22.de:8000/updateText", this.homeText.value).subscribe(res => {
       this.ngOnInit();
     })
   }
@@ -38,7 +38,7 @@ export class HomeComponent implements OnInit{
   }
 
   ngOnInit() {
-    this.http.get("http://localhost:8000/getText/homeText").subscribe(res => {
+    this.http.get("http://ludwig-michael22.de:8000/getText/homeText").subscribe(res => {
       this.text = res.toString();
       this.homeText.patchValue({
         content: this.text

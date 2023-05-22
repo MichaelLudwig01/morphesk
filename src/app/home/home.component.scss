@@ -1,9 +1,9 @@
 .header {
+    margin-top:56px;
     .cover {
-        padding-top:100px;
         background-image: url("../../assets/cover.jpg");
         width:100%;
-        height: 30vw;
+        height: 40vh;
         background-size: cover;
         background-position: bottom;
         display: flex;
@@ -34,6 +34,7 @@
         padding: 50px 400px 50px 400px;
         font-size: 2.5rem;
         font-family: 'Avenir next';
+        color: black;
 
         .edit {
             width: 100%;
@@ -42,35 +43,16 @@
             form {
                 width: 100%;
                 height:100%;
+                display: flex;
+                flex-direction: column;
     
                 textarea {
-                    max-width: calc(100% - 40px);
-                    min-width: calc(100% - 40px);
-                    height:300px;
-                    font-size: 1.4rem;
-                    padding: 20px;
-                    border-radius: 20px;
-                }
-
-                textarea:focus{
-                    border:1px solid orange;
+                    height: 300px;
                 }
 
                 button {
-                    margin-top:20px;
-                    padding:20px;
-                    background-color: white;
-                    border-radius: 10px;
-                    border: 1px solid black;
-                    transition: all .1s linear;
-                }
-
-                button:hover{
-                    background-color: rgba(255, 166, 0, 0.39);
-                }
-
-                button:active{
-                    background-color: orange;
+                    position: relative;
+                    width: 30%;
                 }
             }
         }
@@ -152,6 +134,7 @@
 @media (max-width: 700px) {
     .header {
         .cover {
+            height: 35vh;
             h1 {
                 font-size: 2.3rem;
                 line-height: 40px;
@@ -189,8 +172,9 @@
 @media (max-width: 450px) {
     .header {
         .cover {
+            height: 25vh;
             h1 {
-                font-size: 2.1rem;
+                font-size: 1.9rem;
                 line-height: 40px;
                 margin:0px;
                 width:auto;
