@@ -13,7 +13,8 @@ class TextSection(BaseModel):
 origins = [
     "http://localhost:4200",
     "http://ludwig-michael22.de:80",
-    "http://ludwig-michael22.de"
+    "http://ludwig-michael22.de",
+    "https://michaelludwig01.github.io/morphesk/"
 ]
 
 app.add_middleware(
