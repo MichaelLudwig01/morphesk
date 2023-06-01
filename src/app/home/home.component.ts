@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../auth.service';
 import { HttpClient } from '@angular/common/http';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 
 interface req {
@@ -16,7 +17,9 @@ interface req {
 })
 export class HomeComponent implements OnInit{
 
-  auth!:boolean;
+  auth(){
+    return this.authService.authorized;
+  }
 
   text:string = ''
 
@@ -30,11 +33,11 @@ export class HomeComponent implements OnInit{
     console.log(this.homeText.value)
     this.http.post("http://ludwig-michael22.de:8000/updateText", this.homeText.value).subscribe(res => {
       this.ngOnInit();
+      this._snackBar.open("Text was updated succesfully", 'Okay');
     })
   }
 
-  constructor(private authService:AuthService, private http:HttpClient){
-    this.auth = this.authService.getAutherized();
+  constructor(private authService:AuthService, private http:HttpClient, private _snackBar: MatSnackBar){
   }
 
   ngOnInit() {

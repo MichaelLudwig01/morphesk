@@ -5,10 +5,10 @@
 </div>
 <div class="main">
     <div class="introText">
-        <h1 *ngIf="!auth">
+        <h1 *ngIf="auth() == false">
             {{text}}
         </h1>
-        <div class="edit" *ngIf="auth">
+        <div class="edit" *ngIf="auth()">
             <form [formGroup]="homeText" (ngSubmit)="updateText()">
                 <mat-form-field>
                     <mat-label>Home Text</mat-label>

@@ -1,0 +1,43 @@
+.main {
+    margin-top: 56px;
+    .introText {
+        width: auto;
+        height:auto;
+        padding: 50px 400px 50px 400px;
+        font-size: 2.5rem;
+        font-family: 'Avenir next';
+        color: black;
+
+        .edit {
+            width: 100%;
+            height:100%;
+    
+            form {
+                width: 100%;
+                height:100%;
+                display: flex;
+                flex-direction: column;
+    
+                textarea {
+                    height: 300px;
+                }
+
+                button {
+                    position: relative;
+                    width: 30%;
+                }
+            }
+        }
+    }
+    .video {
+        width: auto;
+        display: flex;
+        justify-content: center;
+        padding: 50px 400px 50px 400px;
+
+        video {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

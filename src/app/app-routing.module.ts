@@ -7,6 +7,7 @@ import { ContactComponent } from './contact/contact.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { AdminComponent } from './admin/admin.component';
+import { AgbComponent } from './agb/agb.component';
 
 const routes: Routes = [
   { path: '', component:HomeComponent},
@@ -15,7 +16,8 @@ const routes: Routes = [
   { path: 'contact', component:ContactComponent},
   { path: 'gallery', component:GalleryComponent},
   { path: 'impressum', component:ImpressumComponent},
-  { path: 'admin', component:AdminComponent}
+  { path: 'admin', component:AdminComponent},
+  { path: 'agb', component:AgbComponent}
 ];
 
 @NgModule({

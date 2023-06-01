@@ -26,6 +26,10 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { MatSelectModule } from '@angular/material/select';
+import {MatChipsModule} from '@angular/material/chips';
+import { AgbComponent } from './agb/agb.component';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { AuthService } from './auth.service';
 
 
 @NgModule({
@@ -39,7 +43,8 @@ import { MatSelectModule } from '@angular/material/select';
     ImpressumComponent,
     GalleryComponent,
     CalenderComponent,
-    AdminComponent
+    AdminComponent,
+    AgbComponent
   ],
   imports: [
     BrowserModule,
@@ -56,9 +61,11 @@ import { MatSelectModule } from '@angular/material/select';
     MatMenuModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatSelectModule
+    MatSelectModule,
+    MatChipsModule,
+    MatSnackBarModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

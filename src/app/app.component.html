@@ -27,17 +27,16 @@
       <li routerLink="admin" id="last"><h4>Admin</h4></li>
     </ul>
   </section>
-</body>-->
+</body>-->  
 
 <mat-drawer-container class="example-container" [hasBackdrop]="'true'">
-    <mat-drawer #drawer [mode]="'push'" style="display: flex; flex-direction: row; background-color: white;">
+    <mat-drawer #drawer [mode]="'push'" style="display: flex; flex-direction: row; background-color: white; height: 100vh; position: fixed">
       <div style="width: auto; height: auto; display:flex; flex-direction: column;">
-        <button mat-button color="accent" routerLink="" style="padding: 30px 60px 30px 60px" (click)="drawer.toggle()"><span style="color:black">Vita</span></button>
-        <button mat-button color="accent" routerLink="vita" style="padding: 30px 60px 30px 60px" (click)="drawer.toggle()"><span style="color:black">Kalender</span></button>
-        <button mat-button color="accent" routerLink="calender" style="padding: 30px 60px 30px 60px" (click)="drawer.toggle()"><span style="color:black">Kontakt</span></button>
-        <button mat-button color="accent" routerLink="contact" style="padding: 30px 60px 30px 60px" (click)="drawer.toggle()"><span style="color:black">Gallerie</span></button>
-        <button mat-button color="accent" routerLink="impressum" style="padding: 30px 60px 30px 60px" (click)="drawer.toggle()"><span style="color:black">Impressum</span></button>
-        <button mat-button color="accent" routerLink="admin" style="padding: 30px 60px 30px 60px" (click)="drawer.toggle()"><span style="color:black">Admin</span></button>
+        <button mat-button color="accent" routerLink="" style="padding: 30px 60px 30px 60px;" (click)="drawer.toggle()"><span style="color:black;">Home</span></button>
+        <button mat-button color="accent" routerLink="vita" style="padding: 30px 60px 30px 60px" (click)="drawer.toggle()"><span style="color:black">Vita</span></button>
+        <button mat-button color="accent" routerLink="calender" style="padding: 30px 60px 30px 60px" (click)="drawer.toggle()"><span style="color:black">Kalender</span></button>
+        <button mat-button color="accent" routerLink="contact" style="padding: 30px 60px 30px 60px" (click)="drawer.toggle()"><span style="color:black">Kontakt</span></button>
+        <button mat-button color="accent" routerLink="gallery" style="padding: 30px 60px 30px 60px" (click)="drawer.toggle()"><span style="color:black">Gallerie</span></button>
       </div>
     </mat-drawer>
     <mat-drawer-content>
@@ -45,14 +44,19 @@
         <button mat-icon-button style="color:black" color="accent" class="example-icon" aria-label="Example icon-button with menu icon" (click)="drawer.toggle()">
           <mat-icon>menu</mat-icon>
         </button>
-        <span style="color:black">TrioMorphesk</span>
+        <span style="color:black; cursor: pointer;" [routerLink]="">TrioMorphesk</span>
+        <div style="color: black; position: absolute; right: 10px;">
+          <button *ngIf="auth() != false" mat-raised-button (click)="exitAdmin()">
+            Exit Admin Mode
+          </button>
+        </div>
       </mat-toolbar>
       <router-outlet></router-outlet>
       <div class="footer">
         <div class="content">
-            <a>Impressum</a>
-            <a>AGB</a>
-            <a>Admin</a>
+          <a routerLink="impressum">Impressum</a>
+          <a routerLink="agb">AGB</a>
+          <a routerLink="admin">Admin</a>
         </div>
       </div>
     </mat-drawer-content>
