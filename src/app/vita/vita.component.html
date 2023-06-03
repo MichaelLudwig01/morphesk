@@ -4,12 +4,12 @@
         <div class="description">
             <h1>Das Trio</h1>
             <p *ngIf="auth() == false">
-            {{TrioText}} 
+                {{TrioText}} 
             </p>
             <div class="edit" *ngIf="auth()">
                 <form [formGroup]="TrioTextForm" (ngSubmit)="updateTrioText()">
                     <mat-form-field>
-                        <mat-label>Home Text</mat-label>
+                        <mat-label>Trio Text</mat-label>
                         <textarea matInput id="text" formControlName="content">{{TrioText}}</textarea>
                     </mat-form-field>
                     <button mat-raised-button type="submit">submit</button>
@@ -17,24 +17,57 @@
             </div>
         </div>
     </div>
-    <div class="section">
+    <div class="section" id="turn">
         <div class="description">
-            <h1>Ilan</h1>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            <h1>Ilian</h1>
+            <p *ngIf="auth() == false">
+                {{IlianText}} 
+            </p>
+            <div class="edit" *ngIf="auth()">
+                <form [formGroup]="IlianTextForm" (ngSubmit)="updateIlianText()">
+                    <mat-form-field>
+                        <mat-label>Ilians Text</mat-label>
+                        <textarea matInput id="text" formControlName="content">{{IlianText}}</textarea>
+                    </mat-form-field>
+                    <button mat-raised-button type="submit">submit</button>
+                </form>
+            </div>
         </div>
         <img src="https://ucfee85a9bc832d4907a6d0fc752.previews.dropboxusercontent.com/p/thumb/AB79CW_TtiI9tcjbS4P0aBl-1zN0XBp-yen-8lTQLe23cx731iiH1Ks23b2uafOIZGiJodqpWZGwx5CqNgziW_fz5SmdFFV54uLMv9h3YOrJmJ7nuRDchKzk7NwO6_IReJM_Ks9H3HZnw11meIew3a-N0QoFyB2oLUST3CmP9MLH8cU29pVRED9UfJ_Yz6bfUUh2j7rQ4cpW8GA2Nur5zb0B6jF9dPmP4Ngq6hi7emlWDdnp9j-5PEc5J3_eOYlUexyb97s4i7gPLlfbSxvZ-ZeKyJ5eR4kdp9VVFul1tY2_wgptq4QyxtpvNtmd-58gRdgBclFVsBSeLZCOCxrRcZX5D9FDQ4eg3kh3X5bpl1P5qjkSyjbiW95UzBwGEPjMSps/p.jpeg">
     </div>
     <div class="section">
         <img src="https://uc805c8cfc52226243088acb7ff6.previews.dropboxusercontent.com/p/thumb/AB5GEu9yW02qXL-z1YGlmipmGO8WYtKbbq-oxP_TvpxVI02AtjmDlOAe2_B88kNAoq-RlarwtfBIBUTuX6ilirQ1K5O1TaDHeTMqGddTH8v-stvSH-N9tQNImtfnxZCog6AzJKsVoB-tTXxG3htlLtW607-6KE1OADMcvyLIqHWwe5a4krm_Z4A1b18FhuFseyCs8sW9-E7IC1npA5agJU2POR_QTBDRN0c2aM9Odp9rBKjQS4juJBlCtuv-JfnX2dMC2MCpMYabziWLZbqxNu7zeWMeoALClIDqB_p-6iJGK-5Z0pJ_ATjWQ1PMzrIe46EPotMZ-sWkXCgQ2Kdx2ltnMMLjgRNetqZTt5XnfQLnSOnd6lRX2kOd9pj49K4TjZE/p.jpeg">
         <div class="description">
-            <h1>Franziska Ludwig</h1>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            <h1>Franziska</h1>
+            <p *ngIf="auth() == false">
+                {{FranziskaText}} 
+            </p>
+            <div class="edit" *ngIf="auth()">
+                <form [formGroup]="FranziskaTextForm" (ngSubmit)="updateFranziskaText()">
+                    <mat-form-field>
+                        <mat-label>Franziskas Text</mat-label>
+                        <textarea matInput id="text" formControlName="content">{{FranziskaText}}</textarea>
+                    </mat-form-field>
+                    <button mat-raised-button type="submit">submit</button>
+                </form>
+            </div>
         </div>
     </div>
-    <div class="section">
+    <div class="section" id="turn">
         <div class="description">
-            <h1>Sophia Rasche</h1>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            <h1>Sophia</h1>
+            <p *ngIf="auth() == false">
+                {{SophiaText}} 
+            </p>
+            <div class="edit" *ngIf="auth()">
+                <form [formGroup]="SophiaTextForm" (ngSubmit)="updateSophiaText()">
+                    <mat-form-field>
+                        <mat-label>Sophias Text</mat-label>
+                        <textarea matInput id="text" formControlName="content">{{SophiaText}}</textarea>
+                    </mat-form-field>
+                    <button mat-raised-button type="submit">submit</button>
+                </form>
+            </div>
         </div>
         <img src="https://uc03878ea02fe86b8aacb54c6504.previews.dropboxusercontent.com/p/thumb/AB43LxC5TAslDU0tw8lCGwiiOsU8YfvrHzh1A0iBJ-8pZ_RhS2KUQZSb-1cEUeAESSB-bgcDyKJD3vVHHB5t3NglfcY7luhKB_LkLfZHCYYosdBgfgTmnJngzB3mGZQA8GULVOMBRGUyVg07eZsKy9T4vZpbJhFpz1uMbimDStadHnUyY3uSBUsB9katSk_j_s3l_b-yufudkz3heSDCna8-IzQiSMV3lObwnDf-fBPsp3id7K6f76Hueln6uTDnHbKQYJiBhIPtwrrSCugRgHIEmvy_Z65zPkNJrLVc8qMOtWNM_78nqZw78uvWJ3QKJ2taiGAEHyPhTPmT5OrAn-nhfG22Y3TYU2JHVN_hRFa4kpcv7egWZYA5mfNH_6uZTDg/p.jpeg">
     </div>

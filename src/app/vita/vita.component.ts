@@ -64,7 +64,7 @@ export class VitaComponent implements OnInit{
     })
   }
 
-  updateSophoiaText(){
+  updateSophiaText(){
 
     this.http.post("http://ludwig-michael22.de:8000/updateText", this.SophiaTextForm.value).subscribe(res => {
       this.ngOnInit();
