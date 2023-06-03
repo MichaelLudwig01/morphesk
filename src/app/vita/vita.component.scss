@@ -1,0 +1,51 @@
+.main {
+    width: 100vw;
+    margin-top: 64px;
+    height: auto;
+
+    .sectionHeader {
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        gap:20px;
+        flex-direction: column;
+        .cover {
+            background-image: url("../../assets/coverTrio.jpeg");
+            width: calc(233.33px + 534px + 20px);
+            height: 65vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .description{
+            width: calc(233.33px + 534px + 20px);
+            color: black;
+            font-size: 20px;
+        }
+    }
+
+    .section {
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        gap:20px;
+
+        img {
+            width:auto;
+            height: 350px;
+        }
+    }
+
+    .description{
+        width: 50%;
+        color: black;
+        font-size: 20px;
+    }
+}

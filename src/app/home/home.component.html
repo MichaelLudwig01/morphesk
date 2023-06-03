@@ -6,7 +6,7 @@
 <div class="main">
     <div class="introText">
         <h1 *ngIf="auth() == false">
-            {{text}}
+            {{text}} 
         </h1>
         <div class="edit" *ngIf="auth()">
             <form [formGroup]="homeText" (ngSubmit)="updateText()">

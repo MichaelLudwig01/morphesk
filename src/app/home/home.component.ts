@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit{
   homeText = new FormGroup({
     array: new FormControl('homeText'),
     content: new FormControl(this.text, Validators.required)
-  })
+  });
 
   updateText(){
 
