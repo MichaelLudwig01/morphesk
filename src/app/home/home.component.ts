@@ -21,6 +21,8 @@ export class HomeComponent implements OnInit{
     return this.authService.authorized;
   }
 
+  
+
   text:string = ''
 
   homeText = new FormGroup({
