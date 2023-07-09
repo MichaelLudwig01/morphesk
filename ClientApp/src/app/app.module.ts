@@ -3,15 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './sites/home/home.component';
+import { MenuComponent } from './object/menu/menu.component';
+import { HomeComponent } from './site/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MenuComponent } from './objects/menu/menu.component';
+import { FooterComponent } from './object/footer/footer.component';
+import { VitaComponent } from './site/vita/vita.component';
+import { CalenderComponent } from './site/calender/calender.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    MenuComponent,
     HomeComponent,
-    MenuComponent
+    FooterComponent,
+    VitaComponent,
+    CalenderComponent
   ],
   imports: [
     BrowserModule,

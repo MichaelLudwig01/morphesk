@@ -1,0 +1,28 @@
+<div class="menu-container">
+    <div class="menu-bar" [@expandAnimation]="isExpanded ? 'expanded' : 'collapsed'">
+        <div class="tools">
+            <svg class="ham hamRotate ham8" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')" [class.active]="isExpanded" (click)="animateSvg()">
+                <path
+                      class="line top"
+                      d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+                <path
+                      class="line middle"
+                      d="m 30,50 h 40" />
+                <path
+                      class="line bottom"
+                      d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+            </svg>
+            <h2>TrioMorphesk</h2>
+        </div>
+        <div *ngIf="isExpanded" class="navigation-container">
+            <a class="item1" routerLink="" (click)="animateSvg()">Home</a>
+            <a class="item2" routerLink="vita" (click)="animateSvg()">Vita</a>
+            <a class="item3" routerLink="calender" (click)="animateSvg()">Kalender</a>
+          </div>
+    </div>
+    <div class="custom-shape-divider-top-1688829079" [@widthAnimation]="isExpanded ? 'expanded' : 'collapsed'" [class.collapsed]="isCollapsed">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+    </div>
+</div>

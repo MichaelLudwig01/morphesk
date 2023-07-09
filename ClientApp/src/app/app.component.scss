@@ -1,9 +1,5 @@
-.menu-bar {
-    width: auto;
+.app {
+    width: 100vh;
     height: auto;
-}
-
-.body {
-    margin-top: 70px; 
-    background-color: black;
+    overflow-x: hidden;
 }
